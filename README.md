@@ -19,6 +19,8 @@ Set of unit tests to check the functionality
 
 * Deploy contract *Add* to a testnet and obtain the contract address (*add_address*)
 * Deploy contract *Math* to the same testnet with the *add_address* as a constructor parameter
+
+## Contract call another contract ##
 * When you invoke *Math.squareValue* it internally calls *Add.addValue* 
 
 
