@@ -1,0 +1,14 @@
+{
+  "name": "dapp",
+  "version": "1.0.0",
+  "description": "DApp for multiple contract interaction demo",
+  "main": "multiple_contrsct_demo_dapp.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "web3js-raw": "0.0.1-beta.5"
+  }
+}

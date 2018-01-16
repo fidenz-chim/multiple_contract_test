@@ -8,7 +8,7 @@ contract Add {
         _currentValue = 0;
     }
 
-    function addValue(uint val) public {
+    function addValue(uint val) payable public {
         _currentValue += val;
     }
 
@@ -16,7 +16,7 @@ contract Add {
       return _currentValue;
     }
 
-    function restValue() public {
+    function resetValue() payable public {
         _currentValue = 0;
     }
 

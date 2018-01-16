@@ -1,2 +1,5 @@
+.DS_Store
 build
 truffle-config.js
+dapp/node_modules
+dapp/package-lock.json

@@ -35,10 +35,11 @@ contract('Math', (accounts) => {
         var x = await mathInstance.getValue()
         assert.equal(x.valueOf(), 16, "16 wasn't the");
     });
-    it("should be 81 when square 9 ", async() =>  {
-        await mathInstance.squareValue(11);
+    it("should be 0 when reset ", async() =>  {
+        await mathInstance.squareValue(5);
+        await mathInstance.resetValue();
         var x = await mathInstance.getValue()
-        assert.equal(x.valueOf(), 81, "81 wasn't the");
+        assert.equal(x.valueOf(), 0, "0 wasn't the");
     });
 
 });

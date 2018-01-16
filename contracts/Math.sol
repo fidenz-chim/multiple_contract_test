@@ -11,7 +11,7 @@ contract Math {
         instanceAdd = Add(a);
     }
 
-    function squareValue(uint val) public{
+    function squareValue(uint val) payable public{
         require(val<10);
         for (uint i=0; i<val; i++){
             instanceAdd.addValue(val);
@@ -23,7 +23,8 @@ contract Math {
       return _currentValue;
     }
 
-    function restValue() public {
+    function resetValue() payable public {
         _currentValue = 0;
+        instanceAdd.resetValue();
     }
 }

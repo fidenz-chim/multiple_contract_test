@@ -1,0 +1,33 @@
+body {
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+
+h1 {
+    color: navy;
+    margin-left: 20px;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin:5px;
+}
+
+.row {
+    min-height: 100px;
+    overflow: hidden;
+    border-bottom: 3px solid gray;
+    padding-top: 5px;
+}
+
+.w3-container-row {
+    border-bottom: 3px solid gray;
+}
