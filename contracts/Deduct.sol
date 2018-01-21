@@ -1,15 +1,14 @@
 pragma solidity ^0.4.17;
-import "./Deduct.sol";
 
-contract Add is Deduct(12) {
+contract Deduct {
 
     uint _currentValue;
 
-    function Add() public {
-        _currentValue = 0;
+    function Deduct(uint init) public {
+        _currentValue = init;
     }
 
-    function addValue(uint val) payable public {
+    function deductValue(uint val) payable public {
         _currentValue += val;
     }
 
