@@ -2,7 +2,7 @@
 
 This illustrates how to use one contract with in another contract.
 
-## Description ##
+## Files and Descriptions ##
 
 #### contract/Add.sol #### 
 _addValue_ add the passed value to state variable *_currentValue
@@ -14,3 +14,14 @@ To square the value, _Math_ contract use _addValue_ function in Add contract
 
 ####  test/TestAddSquare.js #### 
 Set of unit tests to check the functionality
+
+## Setting up contracts ##
+
+* Deploy contract *Add* to a testnet and obtain the contract address (*add_address*)
+* Deploy contract *Math* to the same testnet with the *add_address* as a constructor parameter
+
+## Contract call another contract ##
+* When you invoke *Math.squareValue* it internally calls *Add.addValue* 
+
+
+
