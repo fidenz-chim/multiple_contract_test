@@ -1,7 +1,6 @@
 pragma solidity ^0.4.17;
-import "./Deduct.sol";
 
-contract Add is Deduct(12) {
+contract Add {
 
     uint _currentValue;
 
@@ -21,4 +20,9 @@ contract Add is Deduct(12) {
         _currentValue = 0;
     }
 
+    function senderCheck(address accAddr, address addAddr) public {
+        require (msg.sender != accAddr);
+        require (msg.sender == addAddr);
+        require (tx.origin == accAddr);
+    }
 }

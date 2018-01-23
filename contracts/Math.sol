@@ -27,4 +27,10 @@ contract Math {
         _currentValue = 0;
         instanceAdd.resetValue();
     }
+
+    function senderCheck(address addr) public view returns (uint) {
+        require (msg.sender == addr);
+        instanceAdd.senderCheck(addr, address (this));
+        return 1;
+    }
 }

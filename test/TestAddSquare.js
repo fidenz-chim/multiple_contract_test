@@ -3,6 +3,10 @@ var Math = artifacts.require("./Math.sol");
 
 contract('Math', (accounts) => {
 
+    var PACC = accounts[0];
+    var userAcc1 = accounts[1];
+    var userAcc2 = accounts[2];
+
     var mathInstance;
     var addInstance;
 
@@ -40,6 +44,10 @@ contract('Math', (accounts) => {
         await mathInstance.resetValue();
         var x = await mathInstance.getValue()
         assert.equal(x.valueOf(), 0, "0 wasn't the");
+    });
+    it("Should return 1 ", async() =>  {
+        var x = await mathInstance.senderCheck(userAcc2,{from:userAcc2});
+        assert.equal(x.valueOf(), 1, "1 wasn't the");
     });
 
 });

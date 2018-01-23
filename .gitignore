@@ -3,3 +3,5 @@ build
 truffle-config.js
 dapp/node_modules
 dapp/package-lock.json
+contracts/SenderCheck.sol
+test/TestSenderCheck.js
