@@ -17,9 +17,9 @@ To square the value, _Math_ contract use _addValue_ function in Add contract
 + In the context of Math.senderCheck, sender is the one who invoked the contract function (refer TestAddSquare.js)
  + require (msg.sender == addr); // Sender is invoked user's address
 
-* In the context of Add.senderCheck, sender is the Math contract who invoked the Add.sendChecker functon in Math.sol
-       - require (msg.sender == conAddr); // Sender is Math contract address
-       - require (msg.sender != accAddr); // Sender NOT the user who invoked the function
++ In the context of Add.senderCheck, sender is the Math contract who invoked the Add.sendChecker functon in Math.sol
+ + require (msg.sender == conAddr); // Sender is Math contract address
+ + require (msg.sender != accAddr); // Sender NOT the user who invoked the function
         
 * In the context of Add.senderCheck, tx.origin is the one who invoked the contract function
        - require (tx.origin == accAddr); // tx.origin is the user who invoked the function
